@@ -1,12 +1,14 @@
 
+import bgend from '/assets/bg-end.png';
+import user7 from '/assets/user-7.png';
 
 const Link = () => {
   return (
-      <div className="bg-[#121c2b]" style={{ backgroundImage: "url('/assets/bg-end.png')", backgroundPosition: "left-bottom" }}>
+    <div className="bg-[#121c2b]" style={{ backgroundImage: bgend, backgroundPosition: "left-bottom" }}>
           <div className="container grid grid-cols-2 gap-5 pt-5 px-5 items-center" >
               <div className="">
                   
-                <img src="/assets/user-7.png" alt="" className="w-90 mx-auto -mt-20" />
+                <img src={user7} alt="" className="w-90 mx-auto -mt-20" />
               </div>
               <div className="text-white">
                   <h3 className="text-4xl">Visibility Starts Here. Victory Follows.</h3>

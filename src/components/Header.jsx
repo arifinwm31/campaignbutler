@@ -1,4 +1,5 @@
 
+import mainLogo from '/assets/link-user.png';
 const Header = () => {
   return (
     <div className="bg-gray-900 rounded-br-[200px]">
@@ -40,7 +41,7 @@ const Header = () => {
           </div>
         </div>
         <div className="">
-          <img src="/assets/link-user.png" alt="BG Header" className="w-full -right-5" />
+          <img src={mainLogo} alt="BG Header" className="w-full -right-5" />
         </div>
       </div>
       <div className='container flex mx-auto px-16 items-center text-white pb-18'>

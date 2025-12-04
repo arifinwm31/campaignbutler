@@ -1,18 +1,27 @@
 import React from 'react'
+import cl1 from '/assets/cl1.png';
+import cl2 from '/assets/cl2.png';
+import cl3 from '/assets/cl3.png';
+import cl4 from '/assets/cl4.png';
+import cl5 from '/assets/cl5.png';
+import candidat1 from '/assets/candidat-1.png';
+import candidat2 from '/assets/candidat-2.png';
+import candidat3 from '/assets/candidat-3.png';
+
 import { StackedCarousel, ResponsiveContainer } from 'react-stacked-center-carousel'
 export const data = [
     {
-        cover: "/assets/candidat-1.png",
+        cover: candidat1,
         title: "\"The volunteer walking app revolutionized our ground game.We knocked 40% more doors with the same number of volunteers.\"",
         hero: "Michael Thompson  |  County Commissioner"
     },
     {
-        cover: "/assets/candidat-2.png",
+        cover: candidat2,
         title: "",
         hero:""
     },
     {
-        cover: "/assets/candidat-3.png",
+        cover: candidat3,
         title: "",
         hero: ""
     },
@@ -78,11 +87,11 @@ const Hero = (props) => {
             <div className="bg-[#121c2b] py-20 -mt-70">
                 <div className="container mx-auto pt-50">
                     <ul className="flex items-center justify-center gap-10 ">
-                        <li><img className='w-50' src="/assets/cl1.png" alt="" /></li>
-                        <li><img className='w-50' src="/assets/cl2.png" alt="" /></li>
-                        <li><img className='w-50' src="/assets/cl3.png" alt="" /></li>
-                        <li><img className='w-50' src="/assets/cl4.png" alt="" /></li>
-                        <li><img className='w-50' src="/assets/cl5.png" alt="" /></li>
+                        <li><img className='w-50' src={cl1} alt="" /></li>
+                        <li><img className='w-50' src={cl2} alt="" /></li>
+                        <li><img className='w-50' src={cl3} alt="" /></li>
+                        <li><img className='w-50' src={cl4} alt="" /></li>
+                        <li><img className='w-50' src={cl5} alt="" /></li>
                     </ul>
                 </div>
             </div>
