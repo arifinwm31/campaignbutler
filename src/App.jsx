@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import Form from './components/Form';
 import Link from './components/Link';
 import Footer from './components/Footer';
+import ScrollToTopButton from './components/ScrollToTopButton';
 const App = () => {
   return (
     <div className=''>
@@ -12,6 +13,7 @@ const App = () => {
       <Form />
       <Link />
       <Footer />
+      <ScrollToTopButton />
     </div>
   )
 }

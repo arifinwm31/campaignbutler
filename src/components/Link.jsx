@@ -5,8 +5,8 @@ import user7 from '/assets/user-7.png';
 const Link = () => {
   return (
     <div className="bg-[#121c2b]" style={{ backgroundImage: bgend, backgroundPosition: "left-bottom" }}>
-          <div className="container grid grid-cols-2 gap-5 pt-5 px-5 items-center" >
-              <div className="">
+      <div className="container grid md:grid-cols-2 gap-5 pt-5 px-5 items-center mx-auto" >
+              <div className="md:block hidden">
                   
                 <img src={user7} alt="" className="w-90 mx-auto -mt-20" />
               </div>

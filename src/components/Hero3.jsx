@@ -34,34 +34,34 @@ const Hero = (props) => {
             <h1 className='text-6xl text-center'>Trusted By Winning Candidates</h1>
             </div>
             <div style={{ width: "100%", position: "relative" }}>
-                <ResponsiveContainer
-                    carouselRef={ref}
-                    render={(parentWidth, carouselRef) => {
-                        // If you want to use a ref to call the method of StackedCarousel, you cannot set the ref directly on the carousel component
-                        // This is because ResponsiveContainer will not render the carousel before its parent's width is determined
-                        // parentWidth is determined after your parent component mounts. Thus if you set the ref directly it will not work since the carousel is not rendered
-                        // Thus you need to pass your ref object to the ResponsiveContainer as the carouselRef prop and in your render function you will receive this ref object
-                        let currentVisibleSlide = 3;
-                        if (parentWidth <= 1440) currentVisibleSlide = 3;
-                        if (parentWidth <= 1080) currentVisibleSlide = 1;
-                        return (
-                            <StackedCarousel
-                                ref={carouselRef}
-                                slideComponent={Card}
-                                slideWidth={parentWidth < 800 ? parentWidth - 40 : 750}
-                                carouselWidth={parentWidth}
-                                data={data}
-                                currentVisibleSlide={currentVisibleSlide}
-                                maxVisibleSlide={5}
-                                useGrabCursor
-                            />
-                        );
-                    }}
-                />
+            <ResponsiveContainer
+                carouselRef={ref}
+                render={(parentWidth, carouselRef) => {
+                    // If you want to use a ref to call the method of StackedCarousel, you cannot set the ref directly on the carousel component
+                    // This is because ResponsiveContainer will not render the carousel before its parent's width is determined
+                    // parentWidth is determined after your parent component mounts. Thus if you set the ref directly it will not work since the carousel is not rendered
+                    // Thus you need to pass your ref object to the ResponsiveContainer as the carouselRef prop and in your render function you will receive this ref object
+                    let currentVisibleSlide = 3;
+                    if (parentWidth <= 1440) currentVisibleSlide = 2;
+                    if (parentWidth <= 1080) currentVisibleSlide = 1;
+                    return (
+                        <StackedCarousel
+                            ref={carouselRef}
+                            slideComponent={Card}
+                            slideWidth={parentWidth < 800 ? parentWidth - 40 : 750}
+                            carouselWidth={parentWidth}
+                            data={data}
+                            currentVisibleSlide={currentVisibleSlide}
+                            maxVisibleSlide={5}
+                            useGrabCursor
+                        />
+                    );
+                }}
+            />
             <>
 
-                <a className="py-2 px-4 rounded-md bg-red-600 text-white left-[1%] md:left-[10%] lg:left-[26%]"
-                    style={{ position: "absolute", top: "40%",  zIndex: 10 }}
+                <a className="py-2 px-4 rounded-md bg-red-600 text-white "
+                    style={{ position: "absolute", top: "40%", left: "26%", zIndex: 10 }}
                     size="small"
                     color="primary"
                     onClick={() => {
@@ -70,8 +70,8 @@ const Hero = (props) => {
                 >
                     <i className="ri-arrow-left-line text-white"></i>
                 </a>
-                    <a className="py-2 px-4 rounded-md bg-red-600 text-white right-[1%] md:right-[10%] lg:right-[26%]"
-                        style={{ position: "absolute", top: "40%",  zIndex: 10 }}
+                <a className="py-2 px-4 rounded-md bg-red-600 text-white"
+                        style={{ position: "absolute", top: "40%", right: "26%", zIndex: 10 }}
                     size="small"
                     color="primary"
                     onClick={() => {
@@ -85,7 +85,7 @@ const Hero = (props) => {
 
             <div className="bg-[#121c2b] py-20 -mt-50">
                 <div className="container mx-auto pt-50">
-                    <ul className="flex items-center justify-center gap-10 flex-wrap md:flex-nowrap">
+                    <ul className="flex items-center justify-center gap-10 ">
                         <li><img className='w-50' src={cl1} alt="" /></li>
                         <li><img className='w-50' src={cl2} alt="" /></li>
                         <li><img className='w-50' src={cl3} alt="" /></li>
@@ -120,7 +120,7 @@ export const Card = React.memo(function (props) {
                 draggable={false}
                 src={cover}
             />
-            <div className='absolute bottom-10 md:bottom-30 w-full text-center text-white px-10  '>
+            <div className='absolute bottom-30 w-full text-center text-white px-10  '>
                 <p className='text-xl font-medium italic'>{data[dataIndex].title}</p>
                 <hr className='w-10 mx-auto my-3'/>
                 <p className="text-base">{data[dataIndex].hero}</p>

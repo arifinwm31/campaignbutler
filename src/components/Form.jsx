@@ -4,7 +4,7 @@ const Form = () => {
   return (
       <div className="bg-black py-25">
           <div className="container mx-auto">
-              <div className="grid grid-cols-2 gap-10 justify-between px-18">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 justify-between px-18">
                   <div className="text-white">
                       <h2 className="text-6xl/tight font-medium mb-10">Ready to Launch Your <span className="text-red-700">Winning Campaign?</span></h2>
                       <p className="text-4xl">Get started today with Campaign Butler and receive:</p>
