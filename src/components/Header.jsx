@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-import mainLogo from '/campaignbutler/assets/link-user.png';
+import mainLogo from '/img/link-user.png';
 
 const Header = () => {
   const [menuActive, setMenuActive] = useState(false);
@@ -13,7 +13,7 @@ const Header = () => {
         <div className='container mx-auto xl:px-16 px-4'>
           <div className="flex items-center justify-between py-4 border-b-white border-b-2">
             <h1 className='text-white text-3xl'>Campaign<span className='text-red-700'>Buttler</span></h1>
-            {/* <div className=''> */}
+            {/* <div className=''> test */}
             <ul className={`menu flex items-center  lg:static absolute flex-col lg:flex-row text-white xl:gap-12 gap-6 left-1/2  -translate-x-1/2 lg:left-0 lg:-translate-x-0 lg:w-auto py-10 lg:py-0 transition-all lg:transition-none bg-black w-[50%] lg:w-auto -z-10 lg:z-0 lg:opacity-100 ${menuActive ? "top-16 opacity-100" : "-top-72 opacity-0"}`}>
                 <li><a href="#" className="text-xl font-medium">Services</a></li>
                 <li><a href="#" className="text-xl font-medium">Pricing</a></li>
