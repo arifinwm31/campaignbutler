@@ -29,7 +29,7 @@ export const data = [
 const Hero = (props) => {
     const ref = React.useRef();
     return (
-        <div className="pt-20">
+        <div className=" pt-0 md:pt-20">
             <div className='container mx-auto my-18'>
             <h1 className='text-6xl text-center'>Trusted By Winning Candidates</h1>
             </div>
@@ -83,14 +83,14 @@ const Hero = (props) => {
             </>
             </div>
 
-            <div className="bg-[#121c2b] py-20 -mt-50">
-                <div className="container mx-auto pt-50">
-                    <ul className="flex items-center justify-center gap-10 flex-wrap md:flex-nowrap">
-                        <li><img className='w-50' src={cl1} alt="" /></li>
-                        <li><img className='w-50' src={cl2} alt="" /></li>
-                        <li><img className='w-50' src={cl3} alt="" /></li>
-                        <li><img className='w-50' src={cl4} alt="" /></li>
-                        <li><img className='w-50' src={cl5} alt="" /></li>
+            <div className="bg-[#121c2b] py-5 md:py-20 -mt-60 md:-mt-50">
+                <div className="container mx-auto pt-20 md:pt-50">
+                    <ul className="flex items-center justify-center md:px-10 gap-10 flex-wrap md:flex-nowrap">
+                        <li><img className='w-25 md:w-50' src={cl1} alt="" /></li>
+                        <li><img className='w-25 md:w-50' src={cl2} alt="" /></li>
+                        <li><img className='w-25 md:w-50' src={cl3} alt="" /></li>
+                        <li><img className='w-25 md:w-50' src={cl4} alt="" /></li>
+                        <li><img className='w-25 md:w-50' src={cl5} alt="" /></li>
                     </ul>
                 </div>
             </div>
@@ -121,9 +121,9 @@ export const Card = React.memo(function (props) {
                 src={cover}
             />
             <div className='absolute bottom-10 md:bottom-30 w-full text-center text-white px-10  '>
-                <p className='text-xl font-medium italic'>{data[dataIndex].title}</p>
-                <hr className='w-10 mx-auto my-3'/>
-                <p className="text-base">{data[dataIndex].hero}</p>
+                <p className=' text-sm md:text-xl font-medium italic '>{data[dataIndex].title}</p>
+                <hr className='w-10 mx-auto my-3 md:block hidden '/>
+                <p className="text-sm/tight md:text-base">{data[dataIndex].hero}</p>
             </div>
 
         </div>

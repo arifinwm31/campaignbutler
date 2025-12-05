@@ -10,9 +10,9 @@ const Link = () => {
                   
                 <img src={user7} alt="" className="w-90 mx-auto -mt-20" />
               </div>
-              <div className="text-white">
-                  <h3 className="text-4xl">Visibility Starts Here. Victory Follows.</h3>
-                  <p className="text-2xl py-5">Don't leave your campaign success to chance. Partner with the experts who understand what it takes to win in today's complex political landscape.</p>
+              <div className="text-white mb-4 md:mb-0">
+                  <h3 className=" text-3xl md:text-4xl">Visibility Starts Here. Victory Follows.</h3>
+                  <p className="text-lg md:text-2xl py-5">Don't leave your campaign success to chance. Partner with the experts who understand what it takes to win in today's complex political landscape.</p>
                   <a href="#" className='w-fit px-6 bg-red-600 flex items-center rounded-md text-lg mt-5'>Launch My Campaign <i className="ri-arrow-right-up-line ri-2x"></i></a>
 
               </div>

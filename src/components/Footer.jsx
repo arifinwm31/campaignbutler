@@ -3,11 +3,11 @@ import React from 'react'
 const Footer = () => {
   return (
     <div className='bg-black text-white '>
-          <div className="container mx-auto px-18 pt-25 ">
+          <div className="container mx-auto px-4 md:px-2 md:px-18 pt-10 md:pt-25 ">
               <div className="flex lg:flex-row flex-col justify-between lg:gap-45 gap-20 border-b-[#121c2b] border-b-2 pb-25 mb-5">
                 <div className='w-100'>
                     <h1 className='text-white text-5xl mb-5'>Campaign<span className='text-red-700'>Buttler</span></h1>
-                    <p className='text-lg'>Win Your Next Election with Campaign Butler's All-in-One Solution</p>
+                    <p className='text-md md:text-lg'>Win Your Next Election with Campaign Butler's All-in-One Solution</p>
                 </div>
                 <div className='flex justify-between lg:gap-45'>
                     <ul className='flex flex-col gap-4'>
