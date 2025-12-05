@@ -41,8 +41,8 @@ const Header = () => {
             with voters and secure victory</p>
           <div className='text-white flex flex-col md:flex-row gap-5 justify-between items-center'>
             <div className='flex items-center justify-between px-3 md:gap-5 '>
-              <p className='md:text-xl text-lg text-gray-400'>Find Your Domain</p>
-              <input type="text" name="domain" id="domain" placeholder='Type here..' className='bg-[#141b25] opacity-50 w-[350px] px-6 py-3 text-white placeholder-white' />
+              <p className='md:text-xl text-base text-gray-400'>Find Your Domain</p>
+              <input type="text" name="domain" id="domain" placeholder='Type here..' className='bg-[#141b25] opacity-50 w-auto md:w-[350px] px-6 py-3 text-white placeholder-white' />
             </div>
             <div className='w-fit'>
               <button className=' px-5 border-white rounded-md border-2 flex items-center text-lg'>Search <i className="ri-arrow-right-up-line text-red-700 ri-2x"></i></button>
