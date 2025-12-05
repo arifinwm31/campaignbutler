@@ -1,6 +1,6 @@
 
-import bgend from '/assets/bg-end.png';
-import user7 from '/assets/user-7.png';
+import bgend from '/campaignbutler/assets/bg-end.png';
+import user7 from '/campaignbutler/assets/user-7.png';
 
 const Link = () => {
   return (

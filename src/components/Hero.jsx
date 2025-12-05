@@ -1,12 +1,12 @@
 import React from 'react'
-import cl1 from '/assets/cl1.png';
-import cl2 from '/assets/cl2.png';
-import cl3 from '/assets/cl3.png';
-import cl4 from '/assets/cl4.png';
-import cl5 from '/assets/cl5.png';
-import candidat1 from '/assets/candidat-1.png';
-import candidat2 from '/assets/candidat-2.png';
-import candidat3 from '/assets/candidat-3.png';
+import cl1 from '/campaignbutler/assets/cl1.png';
+import cl2 from '/campaignbutler/assets/cl2.png';
+import cl3 from '/campaignbutler/assets/cl3.png';
+import cl4 from '/campaignbutler/assets/cl4.png';
+import cl5 from '/campaignbutler/assets/cl5.png';
+import candidat1 from '/campaignbutler/assets/candidat-1.png';
+import candidat2 from '/campaignbutler/assets/candidat-2.png';
+import candidat3 from '/campaignbutler/assets/candidat-3.png';
 
 import { StackedCarousel, ResponsiveContainer } from 'react-stacked-center-carousel'
 export const data = [

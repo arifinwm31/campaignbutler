@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-import mainLogo from '/assets/link-user.png';
+import mainLogo from '/campaignbutler/assets/link-user.png';
 
 const Header = () => {
   const [menuActive, setMenuActive] = useState(false);
